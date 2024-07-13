@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Batata Recheada - Strogonoff",
+        "id":"Batata_Recheada_Strogonoff",
+        "preco": 12.00
+    },
+    {
+        "titulo": "Batata Recheada - Bolonhesa",
+        "id":"Batata_Recheada_Bolonhesa",
+        "preco": 12.00
+    },
+    {
+        "titulo": "Batata Recheada - Bacon C/ Molho Branco",
+        "id":"Batata_Recheada_BaconCMolhoBranco",
+        "preco": 12.00
+    },
+    {
+        "titulo": "Batata de Carinha",
+        "id":"Batata_De_Carinha",
+        "preco": 10.00
+    },
+    {
+        "titulo": "Batata Frita",
+        "id":"Batata_Frita",
+        "preco": 8.00
+    },
+    {
+        "titulo": "Picolé",
+        "id":"Picolé",
+        "preco": 3
+    }
+]

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/logo.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="title">
+            <img src="imgs/logo.png"  alt="" srcset="">
+            <h1>Cantina Renascer</h1>
+        </div>
+        <div class="header-total">
+            <h3>Total</h2>
+            <h3 id="total">R$00,00</h2>
+        </div>
+    </nav>
+
+    <div class="client-info">
+        <span>Nome:</span>
+        <input type="text" placeholder="Nome do cliente" id="client-name">
+    </div>
+
+    <div class="order-container">
+        <h3>Pedido:</h3>
+        
+        
+        <div id="product-cards" class="product-cards">
+
+        </div>
+        
+
+        <div class="payment">
+            <h3>Forma de Pagamento:</h3>
+            <h3 id="payment-method-text">Pix</h3>
+
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <button id="pix-button">
+                        <img src="imgs/pix-logo.png" alt="" srcset="">
+                    </button>
+                    <legend>Pix</legend>
+                </div>
+                <div class="payment-method">
+                    <button id="dinheiro-button">
+                        <img src="imgs/dinheiro-logo.png" alt="" srcset="">
+                    </button>
+                    <legend>Dinheiro</legend>
+                </div>
+                <div class="payment-method">
+                    <button id="prazo-button">
+                        <img src="imgs/calendar-logo.png" alt="" srcset="">
+                    </button>
+                    <legend>Prazo</legend>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="troco-container"id="troco-card">
+        <div class="troco-card" >
+            <h3>Troco:</h3>
+            <div class="troco-input">
+                <h4>Dinheiro recebido:</h4>
+                <input type="number" value="0" id="dinheiro-recebido">
+            </div>
+            <div class="troco-output">
+                <h4>Troco a dar:</h4>
+                <legend id="troco-text">R$0,00</legend>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="send-button">
+        <button id="send-button">Enviar</button>
+    </div>
+
+    <footer></footer>
+
+</body>
+<script src="script.js"></script>
+</html>

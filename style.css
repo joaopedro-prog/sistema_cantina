@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+:root{
+    --payment-method-button-size:20vw;
+    --hover-color:#14966f;
+    --container-bg-color:#14966f;
+    --card-bg-color:#14966f;
+    --text-color:#ffffff;
+    --container-darker-color:#0a6b35;
+    --default-bg-color:#ffff;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+.title img{
+    height: 40px;
+    margin-right: 4px;
+}
+
+footer{
+    margin-bottom: 50px;
+}
+
+.navbar{
+    background-color: var(--container-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.client-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-info span{
+    margin-right: 33%;
+    margin-top: 10px;
+    z-index: 0;
+    font-size: 15px;
+}
+
+#client-name{
+    margin-top: 0px;
+    width: 50vw;
+    border-radius: 20px;
+    outline: none;
+    border-style: solid;
+    padding-left: 10px;
+}
+
+.order-container{
+    margin-top: 16px;
+    text-align: center;
+}
+
+.product-cards{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg-color);
+    width: 30%;
+    max-width: 250px;
+    min-width: 93px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+
+    transition-duration: .2s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width:400px){
+    .card{
+        font-size: 14px;
+    }
+}
+
+.card-quantity{
+    background-color: var(--container-darker-color);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.card-input{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+}
+
+.card-input button{
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 7px;
+    font-size: 20px;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    justify-content: center;
+    transition-duration: .2s;
+
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+@media only screen and (max-width:310px){
+    .card-input button{
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+}
+
+.card-input button:hover{
+    transform: scale(1.1);
+}
+
+.payment{
+    margin-top: 20px;
+}
+
+.payment-methods{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.payment-method button{
+    width: 17vw;
+    height: 17vw;
+
+    max-width: 100px;
+    max-height: 100px;
+
+    background-color: var(--default-bg-color);
+    border-style: solid;
+    border-radius: 20px;
+    background-color: var(--default-bg-color);
+    box-shadow:  0px 0px 30px #e7e7e7;
+    transition-duration: .2s;
+}
+
+.payment-method button:hover{
+    transform: scale(1.1);
+    border-color:var(--hover-color);
+    border-width: 3px;
+}
+
+.payment-method button img{
+    width: 50px;
+}
+
+.troco-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+}
+
+.troco-card{
+    background-color: var(--container-bg-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 60vw;
+    max-width: 235px;
+    border-radius: 14px;
+    color: var(--text-color);
+}
+
+.troco-card h3{
+    margin: 20px 0px 0px 0px;
+}
+.troco-card h4{
+    margin: 20px 0px 1px 0px;
+}
+.troco-card legend{
+    margin-bottom: 15px;
+}
+
+#dinheiro-recebido{
+    width: 60%;
+}
+
+.send-button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.send-button button{
+    background-image: linear-gradient(144deg,#40ff90, #4066ef 50%,#00DDEB);
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    border-style: none;
+    color: var(--text-color);
+    border-radius: 10px;
+    transition-duration: .2s;
+    width: 250px;
+}
+
+.send-button button:hover{
+    transform: scale(1.1);
+}
+
+.order-main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--container-bg-color);
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding:10px;
+}
+.order-main-div button{
+    background-color: transparent;
+    border-style: solid;
+    border-color: #ffff;
+    color:#ffff;
+    margin-right: 15px;
+    border-radius: 10px;
+    transition-duration: .4s;
+    height: 50px;
+}
+.order-main-div button:hover{
+    transform: scale(1.2);
+}
+
+.order-secondary-div ul{
+    list-style-type: none;
+    margin: 05px 0px 15px 0px;
+}
+
+.header{
+    background-color: var(--container-bg-color);
+    padding: 15px;
+    color: var(--text-color);
+}
+.pedidos-title h2{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.no-orders{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+.loader {
+    margin: 30px auto auto auto;
+    height: 4px;
+    width: 40vw;
+    max-width: 270px;
+    --c:no-repeat linear-gradient(#00ee30 0 0);
+    background: var(--c),var(--c),#b8fcde;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+}
+
+@keyframes l16 {
+0%   {background-position:-150% 0,-150% 0}
+66%  {background-position: 250% 0,-150% 0}
+100% {background-position: 250% 0, 250% 0}
+}
+
+.hour-text{
+    font-size: 14px;
+}
